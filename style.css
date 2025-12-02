@@ -36,3 +36,7 @@ div{
 #titulocombustivel{
    text-align: center;
 }
+
+#resultado{
+   display: none;
+}
