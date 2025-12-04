@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt_br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="app.js" defer></script>
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scrpit.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
     <title>Calculadora de Consumo</title>
-</head>
-<body>
+  </head>
+  <body>
     <form action="">
       <fieldset>
-        <p id="titulocombustivel"> Selecione o tipe de combustivel:</p>
-        <div>      
-        <label for="etanol">Etanol :</label>
-        <input type="radio" name="combustivel" id="etanol" required />
+        <p id="titulocombustivel">Selecione o tipe de combustivel:</p>
+        <section>
+          <div>
+            <label for="etanol">Etanol</label>
+            <input class="combustivel" type="radio" name="combustivel" id="etanol" required />
+          </div>
 
-        <label for="gasolina">Gasolina :</label>
-        <input type="radio" name="combustivel" id="gasolina" required/>
-        
-        <label for="diesel">Diesel :</label>
-        <input type="radio" name="combustivel" id="diesel" required/>
-              
-      </div>
-      
-      <label for="consumo">Digite o consumo médio do veiculo (Km/L):</label>
-      <input type="number" step="0.1" id="consumo" min="5" required>
+          <div>
+            <label for="gasolina">Gasolina</label>
+            <input class="combustivel" type="radio" name="combustivel" id="gasolina" required />
+          </div>
 
-      <label for="velocidade">Digite a velocidade média do veiculo:</label>
-      <input type="number" min="20" id="velocidade">
+          <div>
+            <label for="diesel">Diesel</label>
+            <input class="combustivel" type="radio" name="combustivel" id="diesel" required />
+          </div>
 
-      <label for="precocombustivel">Digite o preço do combustivel:</label>
-      <input type="number" step="0.001" min="0" id="precocombustivel" required>
+        </section>
 
-      <label for="horas">Digite as horas de viagem:</label>
-      <input type="time" name="horas" id="horas">
+        <label for="consumo">Digite o consumo médio do veiculo (Km/L):</label>
+        <input type="number" step="0.1" id="consumo" min="5" required />
 
-      <button>CALCULAR</button>
-      <P id="resultado"></P>
+        <label for="velocidade">Digite a velocidade média do veiculo:</label>
+        <input type="number" min="20" id="velocidade" />
+
+        <label for="precocombustivel">Digite o preço do combustivel:</label>
+        <input
+          type="number"
+          step="0.001"
+          min="0"
+          id="precocombustivel"
+          required
+                  />
+
+        <label for="horas">Digite as horas de viagem:</label>
+        <input type="time" name="horas" id="horas" />
+
+        <button>CALCULAR</button>
+        <p id="resultado"></p>
       </fieldset>
     </form>
-   
-    
-</body>
+  </body>
 </html>
